@@ -1,5 +1,5 @@
-function HomePage() {
-    return <div>Welcome to Next.js!</div>
-}
+import IndexPageView from "../views/index/IndexPageView";
 
-export default HomePage
+const IndexPage = (props) => <IndexPageView {...props} />;
+
+export default IndexPage;
