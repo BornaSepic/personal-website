@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website for Borna Sepic",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BornaSepic/personal-website.git"
+  },
+  "author": "Borna S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BornaSepic/personal-website/issues"
+  },
+  "homepage": "https://github.com/BornaSepic/personal-website#readme",
+  "dependencies": {
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0"
+  }
+}
