@@ -1,9 +1,12 @@
 import * as Styled from "./Sidebar.css";
+import Navigation from "../navigation/Navigation";
 
 const Sidebar = ({children}) => (
     <>
         <Styled.Sidebar>
-            h
+            <Navigation />
         </Styled.Sidebar>
     </>
 );
+
+export default Sidebar;

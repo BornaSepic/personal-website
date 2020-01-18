@@ -1,7 +1,7 @@
-import {Sidebar} from "../sidebar/Sidebar.css";
 import {GlobalStyle} from "../../styles/global";
 
 import * as Styled from "./Layout.css";
+import Sidebar from "../sidebar/Sidebar";
 
 const Layout = ({children}) => (
     <Styled.LayoutWrapper>

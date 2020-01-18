@@ -84,13 +84,10 @@ export const IntroTextWrapper = styled('div')`
     .info--text {
         display: inline-block;
         color: white;
-        overflow: hidden;
-        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s
     }
     
     .info--text span {
         opacity: 0;
-        transform: translateX(-500px);
         display: block;
         animation: popUp 1s ease-in forwards;
     }
