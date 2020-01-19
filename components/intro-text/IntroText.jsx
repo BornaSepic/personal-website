@@ -38,8 +38,8 @@ const IntroText = (props) => (
                 stroke="white" strokeWidth="4"/>
         </svg>
         <h3 className="info--text">
-            <span>Full stack JavaScript developer / </span>
-            <span>eCommerce Consultant / </span>
+            <span>Full stack JavaScript developer</span>
+            <span>eCommerce Consultant</span>
             <span>Freelancer</span>
         </h3>
     </Styled.IntroTextWrapper>
