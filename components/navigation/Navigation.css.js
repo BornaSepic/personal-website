@@ -26,6 +26,7 @@ export const SidebarNavigation = styled('nav')`
         padding: 7px;
         color: white;
         font-size: 0.8rem;
+        border-radius: 5px;
         
         &:after {
             content: "";

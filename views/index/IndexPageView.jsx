@@ -1,14 +1,10 @@
-import Layout from "../../components/layout/Layout";
-
 import IntroText from "../../components/intro-text/IntroText";
 import * as Styled from "./IndexPageView.css";
 
-const IndexPage = (props) => (
-    <Layout>
-       <Styled.IndexPageContainer>
-           <IntroText />
-       </Styled.IndexPageContainer>
-    </Layout>
+const IndexPageView = (props) => (
+    <Styled.IndexPageContainer>
+        <IntroText/>
+    </Styled.IndexPageContainer>
 );
 
-export default IndexPage;
+export default IndexPageView;

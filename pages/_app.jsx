@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
+import Layout from "../components/layout/Layout";
 
 export default class MyApp extends App {
     componentDidMount() {
@@ -23,7 +24,9 @@ export default class MyApp extends App {
                         content=""
                     />
                 </Head>
-                <Component {...pageProps} />
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
             </React.StrictMode>
         );
     }
