@@ -38,6 +38,7 @@ export const SidebarNavigation = styled('nav')`
     }
     
     a {
+        display: block;
         text-decoration: none;
         color: #4d4d4e;
         svg {
@@ -50,9 +51,15 @@ export const SidebarNavigation = styled('nav')`
                 r: 0;               
             }
         }
+        
+        &.active-link {
+            circle {
+                r: 500;               
+            }
+        }
+        
         &:hover {      
             circle {
-                transition: all 0.5s ease-out;
                 r: 500;               
             }
         }

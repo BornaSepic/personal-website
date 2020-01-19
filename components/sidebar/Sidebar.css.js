@@ -9,7 +9,7 @@ export const Sidebar = styled('aside')`
     align-items: center;
     
     transform: translateX(-60px);
-    animation: slideIn 1s ease-in forwards;
+    animation: slideIn 1s ease-in forwards 3.5s;
     
     @keyframes slideIn {
         to {

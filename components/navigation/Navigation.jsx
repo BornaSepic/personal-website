@@ -1,10 +1,10 @@
-import Link from "next/link";
 import * as Styled from "./Navigation.css";
+import NavLink from "../nav-link/NavLink";
 
 const Navigation = (props) => (
     <Styled.SidebarNavigation>
         <div>
-            <Link href="/">
+            <NavLink href="/">
                 <a>
                     <svg id="home-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                          data-prefix="fas"
@@ -20,10 +20,10 @@ const Navigation = (props) => (
                     </svg>
                     <p className="link-path">Home</p>
                 </a>
-            </Link>
+            </NavLink>
         </div>
         <div>
-            <Link href="/about">
+            <NavLink href="/about">
                 <a>
                     <svg id="about-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                          focusable="false"
@@ -40,10 +40,10 @@ const Navigation = (props) => (
                     </svg>
                     <p className="link-path">About</p>
                 </a>
-            </Link>
+            </NavLink>
         </div>
         <div>
-            <Link href="/portfolio">
+            <NavLink href="/portfolio">
                 <a>
                     <svg id="projects-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                          focusable="false"
@@ -59,10 +59,10 @@ const Navigation = (props) => (
                     </svg>
                     <p className="link-path">Portfolio</p>
                 </a>
-            </Link>
+            </NavLink>
         </div>
         <div>
-            <Link href="/contact">
+            <NavLink href="/contact">
                 <a>
                     <svg id="contact-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                          focusable="false"
@@ -79,7 +79,7 @@ const Navigation = (props) => (
                     </svg>
                     <p className="link-path">Contact</p>
                 </a>
-            </Link>
+            </NavLink>
         </div>
     </Styled.SidebarNavigation>
 );
