@@ -41,3 +41,5 @@ dist
 
 # Next build
 **\.next
+# Local Netlify folder
+.netlify
