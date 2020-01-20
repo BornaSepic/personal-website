@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
         margin: 0;
-        color: #555;
+        color: #fff;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji',
         'Segoe UI Emoji', 'Segoe UI Symbol';
