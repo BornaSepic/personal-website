@@ -1,8 +1,9 @@
 import React from 'react';
-import App, {Container} from 'next/app';
+import App from 'next/app';
 import Head from 'next/head';
 import Layout from "../components/layout/Layout";
 import {PageTransition} from 'next-page-transitions'
+import {AnimationStateProvider} from "../store/context";
 
 export default class MyApp extends App {
     componentDidMount() {
@@ -35,13 +36,13 @@ export default class MyApp extends App {
                         content=""
                     />
                 </Head>
-                <Container>
+                <AnimationStateProvider>
                     <Layout>
                         <PageTransition timeout={500} classNames="page-transition">
                             <Component {...pageProps} />
                         </PageTransition>
                     </Layout>
-                </Container>
+                </AnimationStateProvider>
             </React.Fragment>
         );
     }
