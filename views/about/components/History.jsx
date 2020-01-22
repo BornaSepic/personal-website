@@ -1,5 +1,6 @@
 const History = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="511" height="596" viewBox="0 0 511 600" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="511" height="532" viewBox="0 0 511 500"
+         fill="none">
         <path
             d="M321.718 57.2071c.39-.3905.39-1.0237 0-1.4142l-6.364-6.364c-.391-.3905-1.024-.3905-1.414 0a.9991.9991 0 000 1.4142l5.657 5.6569-5.657 5.6569a.9991.9991 0 000 1.4142c.39.3905 1.023.3905 1.414 0l6.364-6.364zM111.989 57.5h209.022v-2H111.989v2z"
             fill="#fff"/>

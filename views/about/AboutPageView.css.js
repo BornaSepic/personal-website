@@ -12,7 +12,7 @@ export const AboutPageContainer = styled('div')`
         max-width: 100%;
     }
     
-    @media only screen and (max-width: 1120px) {
+    @media only screen and (max-width: 820px) {
         flex-flow: column;
         justify-content: space-around;
         padding: 0 0 0 2vw;

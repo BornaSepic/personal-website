@@ -19,7 +19,7 @@ export const Sidebar = styled('aside')`
     
     @media only screen and (max-width: 425px) {
         width: 100vw;
-        height: 60px;
+        height: 100%;
         overflow: hidden;
         
         transform: translate(0px, -60px);

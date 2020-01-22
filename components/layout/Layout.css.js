@@ -4,7 +4,8 @@ export const LayoutWrapper = styled('div')`
     overflow: hidden;
     background-image: url("/pattern-purple.png");
     background-size: cover;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     
     display: grid;
     grid-template-columns: 60px auto;
@@ -40,7 +41,8 @@ export const LayoutWrapper = styled('div')`
     }
     
     @media only screen and (max-width: 425px) {
+        overflow: auto;
         grid-template-columns: none;
-        grid-template-rows: 60px auto;
+        grid-template-rows: 40px auto;
     }
 `;

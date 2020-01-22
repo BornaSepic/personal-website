@@ -16,28 +16,6 @@ export const SidebarNavigation = styled('nav')`
         }
     }
     
-    .link-path {
-        transition: all 0.5s;
-        z-index: -1;
-        position: absolute;
-        top: 50%;
-        transform: translate(-150px, -50%);
-        background: #181818;
-        padding: 7px;
-        color: white;
-        font-size: 0.8rem;
-        border-radius: 5px;
-        
-        &:after {
-            content: "";
-            position: absolute;
-            top: calc(50% - 9px);
-            left: -18px;
-            border: 10px solid;
-            border-color: transparent #181818 transparent transparent;
-        }
-    }
-    
     a {
         display: block;
         text-decoration: none;
@@ -68,6 +46,34 @@ export const SidebarNavigation = styled('nav')`
     
     @media only screen and (max-width: 425px) {
         flex-flow: row;
+        
+        a {
+            svg {
+                height: 24px;
+            }
+        }
     }
     
+`;
+
+export const LinkTooltip = styled('p')`
+    transition: all 0.5s;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    transform: translate(-150px, -50%);
+    background: #181818;
+    padding: 7px;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 9px);
+        left: -18px;
+        border: 10px solid;
+        border-color: transparent #181818 transparent transparent;
+    }
 `;
