@@ -22,7 +22,7 @@ export const ContactButton = styled('a')`
         right: 0;
         bottom: 0;
         left: 0;
-        background: black;
+        background: #181818;
         transform: scaleX(0);
         transform-origin: 0% 50%;
         transition: -webkit-transform 0.6s ease-out;
@@ -32,7 +32,7 @@ export const ContactButton = styled('a')`
     &:hover {
         box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 
-        border-color: #000000;
+        border-color: #181818;
         &:before {
             transform: scaleX(1);
         }
