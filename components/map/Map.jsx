@@ -14,7 +14,8 @@ const Map = () => {
     return (
         <Styled.MapContainer
             mapStyle="mapbox://styles/mapbox/streets-v9"
-            mapboxApiAccessToken={process.env.MAPBOX_KEY}
+            //key is restricted by URLs from with the requests are coming from
+            mapboxApiAccessToken="pk.eyJ1IjoiYm9ybmFzZXBpYyIsImEiOiJjazVwOTFrbTkwNmNwM3BvMzJtaDRnbDJnIn0.FRhIF6-Mympx4eIKa3VZvw"
             onViewportChange={(viewport) => setViewPort(viewport)}
             {...viewPort}
         >
