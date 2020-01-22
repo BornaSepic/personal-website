@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const IntroTextWrapper = styled('div')`
     display: flex;
     flex-flow: column;
+    margin-bottom: 1rem;
         
     #logo {
+        height: auto;
+        max-height: 300px;
         max-width: 100%;
         stroke-linecap: square;
         
@@ -104,6 +107,12 @@ export const IntroTextWrapper = styled('div')`
                 fill: white;
             }
         `}
+        
+         @media only screen and (max-width: 1120px) {
+            & {
+              margin-bottom: 1rem;
+            }
+         }  
     }
     
     .info--text {
