@@ -1,9 +1,9 @@
 import * as Styled from "./Sidebar.css";
 import Navigation from "../navigation/Navigation";
 
-const Sidebar = ({children}) => (
+const Sidebar = (props) => (
     <>
-        <Styled.Sidebar>
+        <Styled.Sidebar loadingForHomepage={props.loadingForHomepage}>
             <Navigation />
         </Styled.Sidebar>
     </>

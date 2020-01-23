@@ -7,6 +7,10 @@ import {useContext, useEffect} from "react";
 const IndexPageView = (props) => {
     const animationCompleted = useContext(AnimationStateContext);
     useEffect(() => {
+        if (animationCompleted.homepageLoadedFirst === undefined) {
+            animationCompleted.handleHomepageLoadedFirst(true);
+        }
+
         if (!animationCompleted.homepageLoaded) {
             setTimeout(() => {
                 animationCompleted.handleHomepageStatusChange(true);

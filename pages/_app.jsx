@@ -25,7 +25,8 @@ export default class MyApp extends App {
     }
 
     render() {
-        const {Component, pageProps} = this.props;
+        const {Component, pageProps, router} = this.props;
+
         return (
             <React.Fragment>
                 <Head>
@@ -35,12 +36,12 @@ export default class MyApp extends App {
                         name="description"
                         content=""
                     />
-                    <link href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet" />
+                    <link href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet"/>
                 </Head>
                 <AnimationStateProvider>
                     <Layout>
                         <PageTransition timeout={500} classNames="page-transition">
-                            <Component {...pageProps} />
+                            <Component {...pageProps} key={router.route}/>
                         </PageTransition>
                     </Layout>
                 </AnimationStateProvider>
