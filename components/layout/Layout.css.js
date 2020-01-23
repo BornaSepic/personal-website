@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LayoutWrapper = styled('div')`
     overflow: hidden;
-    background-image: url("/pattern-purple.png");
+    background-image: url("/background-pattern.jpg");
     background-size: cover;
     height: 100%;
     min-height: 100vh;
