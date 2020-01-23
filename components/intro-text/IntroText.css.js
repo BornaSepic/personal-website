@@ -115,43 +115,6 @@ export const IntroTextWrapper = styled('div')`
          }  
     }
     
-    .info--text {
-        display: inline-block;
-        color: white;
-    }
-    
-    .info--text span {
-        display: block;
-        
-        ${(props) => props.shouldAnimate ?
-        `
-         z-index: -1;
-            opacity: 0;
-            transform: translateX(-500px);
-            
-            &:nth-child(1) {
-               animation: popIn 1s ease-in forwards 4s;
-            }
-            &:nth-child(2) {
-               animation: popIn 1s ease-in forwards 4.2s;
-            }
-            &:nth-child(3) {
-               animation: popIn 1s ease-in forwards 4.4s;
-            }
-        ` : ``}        
-    }
-    
-    @keyframes popIn {
-        0% {
-            opacity: 0;
-            transform: translateX(-500px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-    
     @keyframes lineAnimation {
         to {
             stroke-dashoffset: 0;
@@ -166,4 +129,41 @@ export const IntroTextWrapper = styled('div')`
             fill: white;
         }
     }
+`;
+
+export const InfoText = styled('h3')`
+        display: inline-block;
+        color: white;
+        
+        span {
+                display: block;
+                ${(props) => props.shouldAnimate ?
+                `
+                z-index: -1;
+                opacity: 0;
+                transform: translateX(-500px);
+                
+                &:nth-child(1) {
+                animation: popIn 1s ease-in forwards 4s;
+                }
+                &:nth-child(2) {
+                animation: popIn 1s ease-in forwards 4.2s;
+                }
+                &:nth-child(3) {
+                animation: popIn 1s ease-in forwards 4.4s;
+                }
+                ` : ``
+                }        
+        }
+
+        @keyframes popIn {
+                0% {
+                        opacity: 0;
+                        transform: translateX(-500px);
+                }
+                100% {
+                        opacity: 1;
+                        transform: translateX(0px);
+                }
+        }
 `;

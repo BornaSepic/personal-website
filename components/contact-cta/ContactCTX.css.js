@@ -14,6 +14,11 @@ export const ContactButton = styled('a')`
     border-radius: 5px;
     transition: all 0.5s ease-in-out, box-shadow .7s;
     
+    ${(props) => props.shouldAnimate ? `
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards 2.5s;
+    ` : ``}
+    
     &:before {
         content: '';
         position: absolute;
@@ -35,6 +40,12 @@ export const ContactButton = styled('a')`
         border-color: #181818;
         &:before {
             transform: scaleX(1);
+        }
+    }
+    
+    @fadeIn {
+        to {
+            opacity: 1;
         }
     }
 `;

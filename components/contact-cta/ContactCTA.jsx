@@ -1,9 +1,9 @@
 import Link from "next/link";
 import * as Styled from "./ContactCTX.css";
 
-const ContactCTX = () => (
+const ContactCTX = (props) => (
   <Link href="/contact">
-      <Styled.ContactButton>
+      <Styled.ContactButton shouldAnimate={!props.animationCompleted}>
          Contact Me
       </Styled.ContactButton>
   </Link>

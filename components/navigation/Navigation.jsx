@@ -5,7 +5,7 @@ const Navigation = (props) => (
     <Styled.SidebarNavigation>
         <div>
             <NavLink href="/">
-                <a>
+                <Styled.SidebarLink>
                     <svg id="home-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                          data-prefix="fas"
                          data-icon="home" className="svg-inline--fa fa-home fa-w-18" role="img"
@@ -19,12 +19,12 @@ const Navigation = (props) => (
                         <circle cx="20" cy="40" r="0" fill="white" clipPath="url(#home-icon)"/>
                     </svg>
                     <Styled.LinkTooltip>Home</Styled.LinkTooltip>
-                </a>
+                </Styled.SidebarLink>
             </NavLink>
         </div>
         <div>
             <NavLink href="/about">
-                <a>
+                <Styled.SidebarLink>
                     <svg id="about-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                          focusable="false"
                          data-prefix="fas"
@@ -39,12 +39,12 @@ const Navigation = (props) => (
                         <circle cx="500" cy="80" r="0" fill="white" clipPath="url(#about-icon)"/>
                     </svg>
                     <Styled.LinkTooltip>About</Styled.LinkTooltip>
-                </a>
+                </Styled.SidebarLink>
             </NavLink>
         </div>
         <div>
             <NavLink href="/portfolio">
-                <a>
+                <Styled.SidebarLink>
                     <svg id="projects-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                          focusable="false"
                          data-prefix="far"
@@ -58,12 +58,12 @@ const Navigation = (props) => (
                         <circle cx="650" cy="250" r="0" fill="white" clipPath="url(#projects-icon)"/>
                     </svg>
                     <Styled.LinkTooltip>Portfolio</Styled.LinkTooltip>
-                </a>
+                </Styled.SidebarLink>
             </NavLink>
         </div>
         <div>
             <NavLink href="/contact">
-                <a>
+                <Styled.SidebarLink>
                     <svg id="contact-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                          focusable="false"
                          data-prefix="far"
@@ -78,7 +78,7 @@ const Navigation = (props) => (
                         <circle cx="0" cy="500" r="0" fill="white" clipPath="url(#contact-icon)"/>
                     </svg>
                     <Styled.LinkTooltip>Contact</Styled.LinkTooltip>
-                </a>
+                </Styled.SidebarLink>
             </NavLink>
         </div>
     </Styled.SidebarNavigation>
