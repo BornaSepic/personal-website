@@ -34,7 +34,7 @@ export default class MyApp extends App {
                     <meta
                         key="description"
                         name="description"
-                        content=""
+                        content="Web developer based in Croatia, focused on eCommerce development and conversion rate optimization."
                     />
                     <link href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet"/>
                 </Head>
