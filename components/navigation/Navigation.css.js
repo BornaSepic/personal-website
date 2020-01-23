@@ -51,7 +51,11 @@ export const SidebarLink = styled('a')`
     }
     
     @media only screen and (max-width: 425px) {
+        display: flex;
+        align-items: center;
+        height: 100%;
         svg {
+            margin: auto;
             height: 24px;
         }
     }
@@ -76,5 +80,6 @@ export const SidebarNavigation = styled('nav')`
     
     @media only screen and (max-width: 425px) {
         flex-flow: row;
+        height: 100%;
     }
 `;

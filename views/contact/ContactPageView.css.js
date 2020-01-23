@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ContactPageMapWrapper = styled('div')`
     position: relative;
+    
+    @media only screen and (max-width: 960px) {
+        min-height: 360px;
+    }
 `;
 
 export const ContactPageContainer = styled('div')`
@@ -17,7 +21,6 @@ export const ContactPageContainer = styled('div')`
     
     @media only screen and (max-width: 960px) {
         grid-template-columns: none;
-        grid-template-rows: 60vh 40vh;
     }
 `;
 
@@ -32,6 +35,10 @@ export const ContactPageInfo = styled('div')`
     
     a {
         color: white;
+    }
+    
+    @media only screen and (max-width: 960px) {
+        position: relative;
     }
 `;
 

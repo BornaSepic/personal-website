@@ -41,8 +41,13 @@ export const LayoutWrapper = styled('div')`
     }
     
     @media only screen and (max-width: 425px) {
-        overflow: auto;
+        overflow: visible;
         grid-template-columns: none;
         grid-template-rows: 40px auto;
+        
+        aside {
+            position: sticky;
+            top: 0px;
+        }
     }
 `;

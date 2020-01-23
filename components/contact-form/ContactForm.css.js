@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ContactIntro = styled('div')`
     max-width: 500px;
-    padding: 0 15px;
     margin-bottom: 20px;
 `;
 
@@ -19,6 +18,10 @@ export const FormContainer = styled('div')`
         padding: 20px;
         border-radius: 20px;
         border: 3px solid;
+    }
+    
+     @media only screen and (max-width: 960px) {
+        margin: 20px 2vw;
     }
 `;
 
