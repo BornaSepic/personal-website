@@ -40,13 +40,13 @@ export const SidebarLink = styled('a')`
     
     &.active-link {
         circle {
-            r: 500;               
+            r: 500px;               
         }
     }
     
     &:hover {      
         circle {
-            r: 500;               
+            r: 500px;               
         }
     }
     
