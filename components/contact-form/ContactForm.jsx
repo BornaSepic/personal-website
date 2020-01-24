@@ -11,6 +11,7 @@ const ContactForm = () => {
                 </p>
             </Styled.ContactIntro>
             <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <Styled.FormItem>
                     <label>Your Name: </label>
                     <input type="text" name="name"/>
