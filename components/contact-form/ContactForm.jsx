@@ -7,7 +7,7 @@ const ContactForm = () => {
                 <h2>Contact me</h2>
                 <p>
                     I am interested in freelance opportunities – especially ambitious or large projects. However, if you
-                    have other request or question, don’t hesitate to contact me using below form either.
+                    have other request or question, don’t hesitate to contact me.
                 </p>
             </Styled.ContactIntro>
             <form name="contact" method="POST" data-netlify="true">

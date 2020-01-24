@@ -13,14 +13,10 @@ export const ContactPageContainer = styled('div')`
     width: 100%;
     
     display: grid;
-    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 70vh 30vh;
     
     & > div > div:last-child {
         width: 100% !important;
-    }
-    
-    @media only screen and (max-width: 960px) {
-        grid-template-columns: none;
     }
 `;
 

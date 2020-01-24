@@ -8,9 +8,8 @@ export const ContactIntro = styled('div')`
 export const FormContainer = styled('div')`
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: column;
-
+    justify-content: space-evenly;
+    flex-flow: row;
     
     form {
         max-width: 470px;
@@ -20,8 +19,12 @@ export const FormContainer = styled('div')`
         border: 3px solid;
     }
     
-     @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         margin: 20px 2vw;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        flex-flow: column;
     }
 `;
 
