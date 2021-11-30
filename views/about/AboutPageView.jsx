@@ -23,7 +23,6 @@ const AboutPageView = (props) => {
                 <br/>
                 <i>Chess enthusiast / Avid gamer </i>
             </Styled.AboutContent>
-            <History/>
         </Styled.AboutPageContainer>
     );
 }
